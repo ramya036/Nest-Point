@@ -1,0 +1,177 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: url('./img/homebackground.jpg') no-repeat center center/cover;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+.logo img {
+    width: 116px;
+    border-radius: 54px;
+    padding-top: 5px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 28px;
+    padding: 5px 10px;
+    transition: all 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #00bcd4;
+    border-bottom: 2px solid #00bcd4;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 50px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero .left {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: #00bcd4;
+    animation: fadeInDown 1s;
+}
+
+.hero h3 {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.buy-sell-card {
+    display: flex;
+    gap: 20px;
+}
+
+.buy-sell-card a {
+    text-decoration: none;
+    padding: 15px 30px;
+    background: #00bcd4;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 26px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.buy-sell-card a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hero .right img {
+    max-width: 100%;
+    border-radius: 15px;
+    animation: fadeIn 1.5s;
+}
+
+.whatwd {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 47px;
+}
+
+.whatwd h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #00bcd4;
+    animation: fadeInUp 1s;
+}
+
+.card-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    filter: brightness(0.7);
+}
+
+/* Keyframes for Animation */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
