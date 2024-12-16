@@ -1,0 +1,126 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(to bottom, #0072ff, #00c6ff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+/* Wrapper */
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Form Container */
+.form-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+    padding-right: 56px;
+}
+
+/* Header */
+h2 {
+    margin-bottom: 20px;
+    color: #0072ff; /* Updated to match gradient */
+    font-size: 24px;
+}
+
+/* Form Fields */
+.form-group {
+    margin-bottom: 15px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border 0.3s;
+}
+
+form input:focus {
+    border: 1px solid #0072ff; /* Updated focus color */
+    outline: none;
+}
+
+/* Button Styling */
+.btn {
+    padding: 12px;
+    background: linear-gradient(to right, #0072ff, #00c6ff); /* Updated gradient */
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    width: 430px;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #005fcb, #0072ff); /* Slightly darker hover effect */
+    transform: scale(1.05); /* Subtle zoom on hover */
+}
+
+/* Footer Text */
+form p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+form a {
+    color: #0072ff; /* Updated link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    form input {
+        font-size: 12px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+}
